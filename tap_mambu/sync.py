@@ -683,6 +683,15 @@ def sync(client, config, catalog, state):
             'bookmark_type': 'datetime',
             'id_fields': ['id']
         },
+        'transaction_channels': {
+            'path': 'organization/transactionChannels',
+            'api_version': 'v2',
+            'api_method': 'GET',
+            'params': {
+                'detailsLevel': 'FULL',
+            },
+            'id_fields': ['id']
+        },
         'users': {
             'path': 'users',
             'api_version': 'v2',
